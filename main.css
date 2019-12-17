@@ -1,0 +1,629 @@
+body {
+    margin: 0;
+    border: 0;
+    height: 100vh;
+    width: 100%;
+    background-color:#1a1a1a;
+    font-family: 'Nunito';
+}
+
+a {
+    text-decoration: none;
+    color:white;
+}
+
+#container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#content {
+    height: 5000px;
+    width: 100%;
+}
+
+#navbar {
+    z-index: 9;
+    color: #876796;
+    width: 100%;
+    position: fixed;
+    height: 70px;
+    background-color: #e2d5cc;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    line-height: 70px;
+    vertical-align: middle;
+    box-shadow: 0px 3px 6px #888888;
+}
+
+#logo {
+    font-size: 30px;
+    letter-spacing: 8px;
+}
+
+#hamberger {
+    margin-top: 5px;
+    margin-left: 15px;
+}
+
+#hiddenbox {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 300px;
+    height: 600px;
+    background: linear-gradient(80deg, #23074d, #cc5333);
+    clip-path: circle(5% at 10% 5%);
+    border-radius: 7px;
+    opacity: 0.8;
+    transition: all .5s ease-in-out;
+    align-items: center;
+}
+
+#hiddenbox:hover {
+    clip-path: circle(100%);
+}
+
+#fake {
+    width: 300px;
+    height: 40px;
+}
+
+.x {
+    margin-left: -240px;
+    margin-top: -19px
+}
+
+.button {
+    width: 200px;
+    height: 70px;
+    border: white solid 2px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 20px;
+    transition: all .5s ease;
+}
+
+.button:hover {
+    font-size: 25px;
+    letter-spacing: 2px;
+    background-color: white;
+    color:#e67300;
+}
+
+.start {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 70px;
+    color: white;
+    width: 100%;
+    height: 850px;
+    background:linear-gradient(
+        rgba(0, 0, 0, 0.7), 
+        rgba(0, 0, 0, 0.1)
+      ), url(https://miro.medium.com/max/1313/1*HKlPco1yPUmhD9YB2JTnug.gif);
+    background-position: center;
+    background-size: cover;
+}
+
+    #lofiheading {
+        width: 100%;
+        height: 500px;
+        text-align: center;
+        font-size: 40px;
+        line-height: 500px;
+        letter-spacing: 4px;
+    }
+
+    #headdes {
+        width: 50%;
+        height: 300px;
+        text-align: center;
+        font-size: 20px;
+    }
+.genelement {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+    width: 100%;
+    height: 850px;
+    background:linear-gradient( to right,
+        rgba(0, 0, 0, 0.9), 
+        rgba(0, 0, 0, 0.1)
+      ), url(https://miro.medium.com/max/2560/0*FjF2hZ8cJQN9aBxk.jpg);
+    background-position: center;
+    background-size: cover;
+}
+    #introduce {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    #gthlofih {
+        padding: 20px;
+        font-size: 30px;
+    }
+
+    #gthlofip {
+        width: 60%;
+        font-size: 25px;
+        padding: 20px;
+    }
+    #vid1 {
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-end;
+        margin-right: 80px;
+        margin-bottom: 80px;
+    }
+
+.genelement2 {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    color: white;
+    width: 100%;
+    height: 850px;
+    background:linear-gradient( to left,
+        rgba(0, 0, 0, 0.9), 
+        rgba(0, 0, 0, 0.3)
+      ), url(https://i.imgur.com/5tSiWPY.jpg);
+    background-position: center;
+    background-size: cover;
+}
+    #gen2des {
+        width: 40%;
+        font-size: 30px;
+        text-align: right;
+        padding-top: 300px;
+        padding-right: 40px;
+    }
+
+#mood {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 950px;
+    background-color: white;
+}
+
+#moodheader {
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    line-height:200px;
+}
+
+#moodselect1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: 350px;
+}
+
+#moodselect2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: 350px;
+}
+
+.moodbut {
+    width: 30%;
+    height: 300px;
+    background-color: grey;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.text {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.face {
+    width: 100%;
+    height: 250px;
+    text-align: center;
+    line-height: 300px;
+}
+
+svg {
+    stroke: white;
+    fill: white;
+}
+
+#mot {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), 
+    rgba(0, 0, 0, 0.5)
+    ), url(https://i.ytimg.com/vi/Yf6rUhPxj70/maxresdefault.jpg);
+    background-position: center;
+    background-size: 110%;
+    transition: all .5s ease;
+    color: white;
+}
+#mot:hover {
+    background-size: 150%;
+}
+
+#hai {
+    color: white;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), 
+    rgba(0, 0, 0, 0.5)
+    ), url(https://pbs.twimg.com/profile_images/1023513151789252608/6VSow1Uz_400x400.jpg);
+    background-position: center;
+    background-size: 85%;
+    transition: all .5s ease;
+}
+#hai:hover {
+    background-size: 120%;
+}
+
+#ba {
+    color: white;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), 
+    rgba(0, 0, 0, 0.5)
+    ), url(https://i.pinimg.com/originals/0a/ab/72/0aab72d5254eb1ba1a53101065b8a511.jpg);
+    background-position: center;
+    background-size: 85%;
+    transition: all .5s ease;
+}
+#ba:hover {
+    background-size: 120%;
+}
+#bon {
+    color: white;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), 
+    rgba(0, 0, 0, 0.5)
+    ), url(https://f4.bcbits.com/img/a1007411662_10.jpg);
+    background-position: center;
+    background-size: 95%;
+    transition: all .5s ease;
+}
+#bon:hover {
+    background-size: 130%;
+}
+
+#nam {
+    color: white;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), 
+    rgba(0, 0, 0, 0.5)
+    ), url(https://i.ytimg.com/vi/jpRdxUMez_0/maxresdefault.jpg);
+    background-position: center;
+    background-size: 130%;
+    transition: all .5s ease;
+}
+#nam:hover {
+    background-size: 170%;
+}
+
+#sau {
+    color: white;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), 
+    rgba(0, 0, 0, 0.5)
+    ), url(https://i2.wp.com/www.strongmocha.com/wp-content/uploads/2018/10/Toho-Reel-To-Reel-402-Photo-2-1024x683.jpg?fit=1024%2C683&ssl=1);
+    background-position: center;
+    background-size: 130%;
+    transition: all .5s ease;
+}
+#sau:hover {
+    background-size: 170%;
+}
+
+#artists {
+    width: 100%;
+    height: 850px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background:linear-gradient(rgba(0, 0, 0, 0.3), 
+    rgba(0, 0, 0, 0.3)
+    ), url(https://cdn141.picsart.com/299012863059201.jpg?r1024x1024);
+    background-position: center;
+    background-size: cover;
+}
+
+.ytf {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.artistsdes {
+    font-size: 30px;
+}
+
+.yt {
+    color: white;
+    width: 20%;
+    height: 320px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.artistsdes {
+    width: 100%;
+    height: 90px;
+    text-align: center;
+    color: white;
+}
+
+.end {
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+#imgs4 {
+    width: 200px;
+    height: 200px;
+    background: url(https://yt3.ggpht.com/a/AGF-l7-jbJIj6XGK2nJm_Ljm1AlG0vY9Nv6FGG76NQ=s288-c-k-c0xffffffff-no-rj-mo);    
+    border-radius: 50%;
+    margin-left: 50%;
+    transform: translate(-50%);
+    margin-top: 10px;
+    background-position: center;
+    background-size: cover;
+    transition: all .5s ease;
+}
+
+#imgs1 {
+    width: 200px;
+    height: 200px;
+    background: url(https://yt3.ggpht.com/a/AGF-l78U9oRUvCJuuDhBZhaGo0-aQnu1RuP_dB_Jqg=s288-c-k-c0xffffffff-no-rj-mo);    
+    border-radius: 50%;
+    margin-left: 50%;
+    transform: translate(-50%);
+    margin-top: 10px;
+    background-position: center;
+    background-size: cover;
+    transition: all .5s ease;
+}
+
+#imgs2 {
+    width: 200px;
+    height: 200px;
+    background: url(https://yt3.ggpht.com/a/AGF-l79gPoKdcEvL7o4hCkxx76WqgkxnQr2_34Ltsw=s288-c-k-c0xffffffff-no-rj-mo);    
+    border-radius: 50%;
+    margin-left: 50%;
+    transform: translate(-50%);
+    margin-top: 10px;
+    background-position: center;
+    background-size: cover;
+    transition: all .5s ease;
+}
+
+#imgs3 {
+    width: 200px;
+    height: 200px;
+    background: url(https://yt3.ggpht.com/a/AGF-l7-SKj80Bv1T9xUOpYZR-hEx2zQBevnhOh7sEA=s288-c-k-c0xffffffff-no-rj-mo);    
+    border-radius: 50%;
+    margin-left: 50%;
+    transform: translate(-50%);
+    margin-top: 10px;
+    background-position: center;
+    background-size: cover;
+    transition: all .5s ease;
+}
+
+.imgsdes {
+    width: 100%;
+    height: 110px;
+    line-height: 110px;
+    text-align: center;
+    font-size: 20px;
+}
+
+#imgs1:hover {
+    width: 220px;
+    height: 220px;
+}
+
+#imgs2:hover {
+    width: 220px;
+    height: 220px;
+}
+
+#imgs3:hover {
+    width: 220px;
+    height: 220px;
+}
+
+#imgs4:hover {
+    width: 220px;
+    height: 220px;
+}
+#playlists {
+    width: 100%;
+    height: 850px;
+    background:linear-gradient(rgba(0, 0, 0, 0.4), 
+    rgba(0, 0, 0, 0.4)
+    ), url(https://cdnb.artstation.com/p/assets/images/images/012/022/523/large/arawn-dystopia-vaporwave-basic-font.jpg?1532614096);
+    background-position: center;
+    background-size: cover;
+}
+
+.songcontainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.playheader {
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    font-size: 70px;
+    line-height: 200px;
+    letter-spacing: 15px;
+    color:white;
+}
+
+.songplace {
+    width: 100%;
+    height: 650px;
+    overflow: hidden;
+    position: relative;
+}
+
+.songsec {
+    position: absolute;
+    width: 50%;
+    overflow-y: scroll;
+    height: 550px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.song {
+    width: 98%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.song:hover {
+    letter-spacing: 3px;
+}
+
+.playbut {
+    height: 100%;
+    width: 15%;
+}
+
+
+.name {
+    color: white;
+    width: 85%;
+    height: 100%;
+    line-height: 80px;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.playbut {
+    background: url(https://ih0.redbubble.net/image.357190666.6433/raf,750x1000,075,t,101010:01c5ca27c6.u1.jpg);
+    background-position: center;
+    background-size: 160%;
+}
+
+#s1 {
+    background:linear-gradient(to right,rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.3)
+    ), url(https://i.ytimg.com/vi/hMfGdzhOEX0/maxresdefault.jpg);
+    background-position: center;
+    background-size: 70%;
+}
+
+#s2 {
+    background:linear-gradient(to right,rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.3)
+    ), url(https://i.ytimg.com/vi/CqHbdZ7uQ_k/maxresdefault.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#s3 {
+    background:linear-gradient(to right,rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.3)
+    ), url(https://i1.sndcdn.com/artworks-000315950637-8whche-t500x500.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#s4 {
+    background:linear-gradient(to right,rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.3)
+    ), url(https://i.ytimg.com/vi/5i9bSqt64ok/maxresdefault.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#s5 {
+    background:linear-gradient(to right,rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.3)
+    ), url(https://i.ytimg.com/vi/7ZguAEoNpZw/maxresdefault.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#s6 {
+    background:linear-gradient(to right,rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.3)
+    ), url(https://66.media.tumblr.com/tumblr_p7fywr2RZQ1u56p6f_1524168531_cover.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#s7 {
+    background:linear-gradient(to right,rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.3)
+    ), url(https://i.ytimg.com/vi/c9kX-RYFUi0/maxresdefault.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#s8 {
+    background:linear-gradient(to right,rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.3)
+    ), url(https://i.ytimg.com/vi/wOo6VKu5FjU/maxresdefault.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#s9 {
+    background:linear-gradient(to right,rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.3)
+    ), url(https://i.ytimg.com/vi/mYh2I0ieCW4/maxresdefault.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#s10 {
+    background:linear-gradient(to right,rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.3)
+    ), url(https://i.ytimg.com/vi/DhHGDOgjie4/maxresdefault.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+#contact {
+    width: 100%;
+    height: 150px;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    line-height: 150px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
